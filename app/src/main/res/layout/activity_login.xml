@@ -87,6 +87,7 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
+        android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -94,7 +95,7 @@
         android:background="@drawable/btnshap"
         app:layout_constraintTop_toBottomOf="@id/txtInputPass"
         android:layout_marginTop="10dp"
-        android:text="NEXT"
+        android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="25sp"
         />

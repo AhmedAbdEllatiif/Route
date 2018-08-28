@@ -4,5 +4,6 @@
     <string name="survey">SURVEY</string>
     <string name="password">password</string>
     <string name="moderator">Moderator username</string>
+    <string name="next">NEXT</string>
 
 </resources>
