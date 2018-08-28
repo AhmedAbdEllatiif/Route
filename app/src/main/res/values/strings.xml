@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Route</string>
+    <string name="userName">username</string>
+    <string name="survey">SURVEY</string>
+    <string name="password">password</string>
+    <string name="moderator">Moderator username</string>
+
 </resources>
