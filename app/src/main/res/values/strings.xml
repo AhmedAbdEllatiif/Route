@@ -5,5 +5,11 @@
     <string name="password">password</string>
     <string name="moderator">Moderator username</string>
     <string name="next">NEXT</string>
-
+    <string name="androidCourse">Android Course</string>
+    <string name="back">Back</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="gender">Gender</string>
 </resources>

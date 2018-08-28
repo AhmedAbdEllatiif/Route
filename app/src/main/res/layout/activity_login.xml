@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/btnshap"
+        android:background="@drawable/btnshape"
         app:layout_constraintTop_toBottomOf="@id/txtInputPass"
         android:layout_marginTop="10dp"
         android:text="@string/next"
