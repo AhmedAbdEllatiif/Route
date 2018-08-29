@@ -48,6 +48,13 @@
              />
     </LinearLayout>
 
+<android.support.constraint.Guideline
+    android:id="@+id/guideLineAndroidCourse"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintGuide_percent=".20"/>
+
 
     <TextView
         android:id="@+id/txtsurvey"
@@ -56,8 +63,7 @@
         android:text="@string/survey"
         android:textColor="@color/lightGreen"
         android:textSize="40sp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/guideLineAndroidCourse"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
@@ -72,23 +78,6 @@
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         >
-
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/txtName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textColor="@color/blue"
-        app:layout_constraintTop_toBottomOf="@id/txtsurvey"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="5dp"
-        />
            <android.support.design.widget.TextInputEditText
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
@@ -99,7 +88,7 @@
                android:hint="@string/name"
                android:backgroundTint="@color/colorPrimaryDark"
                />
-       </LinearLayout>
+
     </android.support.design.widget.TextInputLayout>
 
 
@@ -135,6 +124,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtInputPhone"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
+        android:layout_marginTop="35dp"
         >
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -152,9 +142,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btnshape"
         app:layout_constraintTop_toBottomOf="@id/txtInputGender"
-        android:layout_marginTop="10dp"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="25sp"
