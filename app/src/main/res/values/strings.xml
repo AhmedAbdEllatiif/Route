@@ -12,4 +12,9 @@
     <string name="male">male</string>
     <string name="female">female</string>
     <string name="gender">Gender</string>
+
+    <string-array name="genders">
+        <item>"Male"</item>
+        <item>"Female"</item>
+    </string-array>
 </resources>

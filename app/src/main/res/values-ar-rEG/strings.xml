@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Route</string>
+    <string name="userName">اسم المستخدم</string>
+    <string name="survey">استطلاع</string>
+    <string name="password">كلمة المرور</string>
+    <string name="moderator">اسم المستخدم</string>
+    <string name="next">التالى</string>
+    <string name="androidCourse">Android Course</string>
+    <string name="back">السابق</string>
+    <string name="name">الاسم</string>
+    <string name="phone">الهاتف</string>
+    <string name="male">ذكر</string>
+    <string name="female">"انثى "</string>
+    <string name="gender">النوع</string>
+</resources>
