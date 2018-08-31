@@ -14,6 +14,7 @@ public class Survey extends AppCompatActivity {
 
     TextView txtBack;
     Spinner spinner;
+ 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
