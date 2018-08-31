@@ -22,8 +22,7 @@ public class Survey extends AppCompatActivity {
     txtBack.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(Survey.this,Login.class);
-            startActivity(intent);
+            onBackPressed();
         }
     });
 
