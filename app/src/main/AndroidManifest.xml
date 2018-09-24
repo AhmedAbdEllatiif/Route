@@ -20,11 +20,11 @@
         </activity>
         <activity
             android:name=".Login"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
 
         <activity android:name=".Survey"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
             >
         </activity>
     </application>
