@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toolbar;
@@ -14,7 +15,7 @@ public class Survey extends AppCompatActivity {
 
     TextView txtBack;
     Spinner spinner;
- 
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +24,6 @@ public class Survey extends AppCompatActivity {
 
     txtBack = (TextView) findViewById(R.id.txtBack);
     spinner = (Spinner) findViewById(R.id.spinner);
-
     txtBack.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
