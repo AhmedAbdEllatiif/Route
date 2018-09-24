@@ -21,12 +21,11 @@
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-
-
-        <activity android:name=".Survey"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            >
-        </activity>
+        <activity
+            android:name=".Survey"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".UsersView"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 
 </manifest>

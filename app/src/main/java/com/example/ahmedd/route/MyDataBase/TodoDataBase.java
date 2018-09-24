@@ -12,11 +12,11 @@ import com.example.ahmedd.route.MyDataBase.Model.Todo;
 public abstract class TodoDataBase extends RoomDatabase {
 
 
-    private static RoomDatabase myDataBase;
+    private static TodoDataBase myDataBase;
 
     public abstract TodoDAO todoDAO();
 
-    public static RoomDatabase getInstance(Context context){
+    public static TodoDataBase getInstance(Context context){
 
         if (myDataBase == null) {
             //initailize myDataBase
