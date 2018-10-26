@@ -13,6 +13,8 @@
     <string name="female">female</string>
     <string name="gender">Gender</string>
     <string name="show">Show</string>
+    <string name="all_users">All Users</string>
+    <string name="update">Update</string>
 
 
     <string-array name="genders">

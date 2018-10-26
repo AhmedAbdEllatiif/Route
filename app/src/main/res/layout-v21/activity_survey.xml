@@ -61,7 +61,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/survey"
-        android:textColor="@color/lightGreen"
+        android:textColor="@color/colorAccent"
         android:textSize="40sp"
         app:layout_constraintTop_toBottomOf="@id/guideLineAndroidCourse"
         app:layout_constraintStart_toStartOf="parent"
@@ -163,6 +163,20 @@
         android:textSize="25sp"
         />
 
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btnshape"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="gone"
+        />
     <Button
         android:id="@+id/btnShow"
         android:layout_width="match_parent"

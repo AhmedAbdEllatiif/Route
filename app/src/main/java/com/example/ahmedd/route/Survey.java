@@ -9,7 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import com.example.ahmedd.route.MyDataBase.Model.Todo;
 import com.example.ahmedd.route.MyDataBase.TodoDataBase;
 
@@ -17,8 +16,9 @@ public class Survey extends AppCompatActivity {
 
     TextView txtBack;
     Spinner spinner;
-    Button next;
+    public static Button next;
     Button btnShow;
+    public static Button btnUpdate;
     TextInputEditText editTxt_name;
     TextInputEditText editTxt_phone;
 
@@ -30,6 +30,7 @@ public class Survey extends AppCompatActivity {
     txtBack = (TextView) findViewById(R.id.txtBack);
     spinner = (Spinner) findViewById(R.id.spinner);
     btnShow = (Button) findViewById(R.id.btnShow);
+    btnUpdate = (Button) findViewById(R.id.btnUpdate);
     next = (Button) findViewById(R.id.btnAdd);
     editTxt_name = (TextInputEditText) findViewById(R.id.editTxt_name);
     editTxt_phone = (TextInputEditText) findViewById(R.id.editTxt_phone);
@@ -63,7 +64,7 @@ public class Survey extends AppCompatActivity {
 
             Intent intent = new Intent(Survey.this,UsersView.class);
             startActivity(intent);
-            finish();
+
         }
     });
 
@@ -73,6 +74,20 @@ public class Survey extends AppCompatActivity {
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(myAdapter);
 
+
+        btnUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String name = editTxt_name.getText().toString();
+                String phone = editTxt_phone.getText().toString();
+                String gender = spinner.getSelectedItem().toString();
+
+                Todo todo = new Todo("Name: " + name,"Gender: " +gender,"Mobile: " + phone);
+                TodoDataBase.getInstance(getApplicationContext())
+                        .todoDAO().updateItem(todo);
+            }
+
+        });
 
     }
 }

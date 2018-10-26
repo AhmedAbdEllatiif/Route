@@ -1,11 +1,14 @@
 package com.example.ahmedd.route;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
+import android.view.View;
+import android.widget.Button;
 
 import com.example.ahmedd.route.Adapters.UsersAdapter;
 import com.example.ahmedd.route.MyDataBase.Model.Todo;
@@ -34,8 +37,13 @@ public class UsersView extends AppCompatActivity {
         adapter.setOnCardClickListener(new UsersAdapter.onItemClickListener() {
             @Override
             public void onClick(int position, Todo todo) {
-                TodoDataBase.getInstance(getApplicationContext()).todoDAO().removeItem(todo);
-                adapter.notifyDataSetChanged();
+
+                Survey.next.setVisibility(View.GONE);
+                Survey.btnUpdate.setVisibility(View.VISIBLE);
+
+                Intent intent = new Intent(UsersView.this,Survey.class);
+                startActivity(intent);
+                finish();
             }
         });
 
