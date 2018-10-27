@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".LoginActivity"
     android:background="@color/white"
     >
 
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/txtInputUser"
+        android:id="@+id/editTxtInputModerator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -49,15 +49,18 @@
         >
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextModerator"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/user"
+            android:textColor="@color/black"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
             android:drawablePadding="8dp"
-            android:hint="@string/name"
-
-            tools:ignore="RtlCompat" />
+            android:hint="@string/moderator_name"
+            android:inputType="textPersonName"
+            tools:ignore="RtlCompat"
+            />
     </android.support.design.widget.TextInputLayout>
 
 
@@ -65,24 +68,28 @@
 
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/txtInputPass"
+        android:id="@+id/editTxtInputPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/txtInputUser"
+        app:layout_constraintTop_toBottomOf="@id/editTxtInputModerator"
         android:layout_marginTop="20dp"
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         >
 
         <android.support.design.widget.TextInputEditText
+            android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/password"
+            android:textColor="@color/black"
             android:drawableStart="@drawable/lock"
             android:drawablePadding="8dp"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            tools:ignore="RtlCompat" />
+            android:inputType="textPassword"
+            tools:ignore="RtlCompat"
+            />
 
     </android.support.design.widget.TextInputLayout>
 
@@ -94,7 +101,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/btnshape"
-        app:layout_constraintTop_toBottomOf="@id/txtInputPass"
+        app:layout_constraintTop_toBottomOf="@id/editTxtInputPass"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="25sp"

@@ -9,8 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
-import com.example.ahmedd.route.MyDataBase.Model.Todo;
-import com.example.ahmedd.route.MyDataBase.TodoDataBase;
+
 
 public class Survey extends AppCompatActivity {
 
@@ -27,7 +26,7 @@ public class Survey extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
 
-    txtBack = (TextView) findViewById(R.id.txtBack);
+   /* txtBack = (TextView) findViewById(R.id.txtBack);
     spinner = (Spinner) findViewById(R.id.spinner);
     btnShow = (Button) findViewById(R.id.btnShow);
     btnUpdate = (Button) findViewById(R.id.btnUpdate);
@@ -88,6 +87,7 @@ public class Survey extends AppCompatActivity {
             }
 
         });
-
+*/
     }
 }
+

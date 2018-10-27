@@ -10,17 +10,16 @@ import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.ahmedd.route.Adapters.UsersAdapter;
-import com.example.ahmedd.route.MyDataBase.Model.Todo;
-import com.example.ahmedd.route.MyDataBase.TodoDataBase;
+
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UsersView extends AppCompatActivity {
 
-    UsersAdapter adapter;
-    List<Todo> items;
+   // UsersAdapter adapter;
+    //List<Todo> items;
     RecyclerView recyclerViewAllUsers;
 
     @Override
@@ -28,7 +27,7 @@ public class UsersView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_users_view);
 
-        items = new ArrayList<>();
+     /*   items = new ArrayList<>();
 
         recyclerViewAllUsers = (RecyclerView) findViewById(R.id.RecyclerView_allUsers);
         recyclerViewAllUsers.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
@@ -62,11 +61,12 @@ public class UsersView extends AppCompatActivity {
 
             }
         }).attachToRecyclerView(recyclerViewAllUsers);
-
+*/
 
     }
+}
 
-    @Override
+   /* @Override
     public void onResume() {
         super.onResume();
         items = TodoDataBase.getInstance(getApplicationContext())
@@ -75,3 +75,4 @@ public class UsersView extends AppCompatActivity {
         adapter.setTodoList(items);
     }
 }
+*/

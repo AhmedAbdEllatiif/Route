@@ -1,3 +1,4 @@
+/*
 package com.example.ahmedd.route.Adapters;
 
 import android.support.annotation.NonNull;
@@ -95,3 +96,4 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
 }
 
+*/
